@@ -1,0 +1,79 @@
+@import url(/css/main.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css);
+
+.board {
+  height: 60vh;
+  margin-top: 20px auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: rgba(235, 235, 235, 0.26);
+  animation: fadeIn ease 2.5s;
+  font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.InputTogether {
+  margin: 100px;
+}
+
+#kolegiji {
+  margin: 80px;
+  height: 300px;
+  width: auto;
+}
+
+#NazivKolegija {
+  width: 30vw;
+}
+
+#kolegiji {
+  display: none;
+}
+
+.RemoveKolegij {
+  border-radius: 8px;
+  background-color: rgb(255, 0, 55); /* Green */
+  border: none;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+tr:not(:first-child):not(:last-child):nth-child(even) {
+  background: rgb(247, 247, 247);
+}
+
+tr:last-child {
+  border-top: 2px solid black;
+  font-weight: bold;
+  color: rgb(255, 0, 55);
+}
+
+.ui-widget-header {
+  background: orange;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+  .board {
+    margin: auto;
+    display: table;
+  }
+
+  .InputTogether {
+    margin-bottom: 20px;
+  }
+
+  #kolegiji {
+    margin-top: 0px;
+  }
+}

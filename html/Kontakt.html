@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="/css/Contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+    
+    <div class="container">
+
+        <form id="contact" method="POST" action="http://www.fulek.com/VUA/SUPIT/ContactUs" onsubmit="window.parent.closeIframeTimer(3000)"> <!-- Funkcije su od iframe.js -->
+        <h2><i class="fa fa-envelope"></i> Kontaktirajte nas</h2>
+        <label for="name">Puno ime:</label>
+        <input required type="text" id="name" name="name" placeholder="">
+
+        <label for="email">Email:</label></tr>
+        <input required type="email" id="email" name="email"/>
+        
+        <label for="importance">Važnost poruke:</label>
+        <select name="importance" >
+            <option value="high" selected>High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+        
+        <label for="message">Vaša poruka:</label>
+        <textarea required id="message" name="message" placeholder="" style="height:200px"></textarea>
+
+        <label for="newsletter">Primaj newsletter: </label>
+        <input type="checkbox" id="newsletter" name="newsletter" value="prihvacam">
+        <br>
+        <input id="send" type="submit" value="Pošalji">
+        <input id="discard" type="button" value="Odustani" onclick="window.parent.closeIframe();">  <!-- Funkcije su od iframe.js -->
+        
+        </form>
+    </div>
+</body>
+</html>

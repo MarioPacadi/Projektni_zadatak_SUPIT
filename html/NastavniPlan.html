@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra</title>
+
+    <link rel="icon" href="/img/Algebra-logo.png">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- MyJS -->
+    <script src="/js/iframes.js"></script>
+    <script src="/js/Autoload.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="/js/bootstrap/bootstrap.bundle.min.js"></script> 
+
+    <link rel="stylesheet" href="/css/NastavniPlan.css">
+
+</head>
+<body>
+    <div id="main">
+      <div id="header">
+         <nav class="navbar navbar-expand-xl navbar-fixed-top">
+            <img src="/img/Algebra-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+               <a class="nav-item nav-link active" href="/html/Pocetna.html"><i class='fa fa-home'></i>Početna<span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="/html/O_nama.html"><i class="far fa-comments"></i>O nama</a>
+                  <a class="nav-item nav-link" href="/html/Novost.html"><i class="fa fa-info-circle"></i>Novosti</a>
+                  <a class="nav-item nav-link" href="/html/NastavniPlan.html"><i class="fa fa-info-circle"></i>Nastavni plan</a>
+                  <a class="nav-item nav-link" id="openIframe"><i class="fa fa-envelope"></i>Kontakt</a>
+              </div>
+            </div>
+           </nav>
+       </div>
+       <div id="content">
+      
+           <div class="GlavniNaslov animate__animated animate__slideInUp"><h1>Nastavni plan</h1></div>
+    
+        <div class="board">
+
+            <div class="InputTogether">
+              <label for="NazivKolegija" style="display: block; font-weight: bold;">Naziv kolegija: </label>
+              <input type="text" id="NazivKolegija" name="Search" placeholder="Započnite unos naziva kolegija" autofocus="true"/>
+            </div>
+
+            <div class="table-responsive-xl">
+              <table id="kolegiji" class="table">
+                <tr>
+                  <th>Kolegij</th>
+                  <th>ECTS</th>
+                  <th>Sati</th>
+                  <th>P</th>
+                  <th>V</th>
+                  <th>Tip</th>
+                  <th></th>
+                </tr>
+
+                <tr>
+                  <th style="color:black">Ukupno: </th>
+                  <th id="ukupnoECTS"></th>
+                  <th id="ukupnoSATI"></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </table>
+            </div>
+
+            <div class="backdrop"></div>
+            <div id="iframeHolder" class="embed-responsive embed-responsive-21by9"> </div>
+
+            <div id="dijaloskiOkvir" title="Warning">
+          </div>
+
+        </div>
+
+       </div>
+       <footer class="bg-light text-center text-xl-start">
+         <div id="footer" class="text-center p-3">
+            <p id="zaiskriW">budi izvrstan u onom što voliš</p>
+            <p id="zaiskriR">zaiskri</p>
+         </div>
+        </footer>
+   </div>
+ </body>
+</html>

@@ -1,0 +1,60 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: +1;
+}
+
+.navbar {
+  background-color: black;
+  z-index: +1;
+}
+
+.navbar-nav i {
+  color: orange;
+  margin: 10px;
+}
+
+.navbar-nav a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.5s ease;
+  margin-left: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
+
+  cursor: pointer;
+}
+
+.navbar-nav a:hover {
+  color: yellow;
+  transform: scale(0.9);
+}
+
+#openIframe {
+  color: white;
+}
+
+.navbar-nav.extraMenu .nav-item a{
+  animation: ease-in-out 0.5s;
+  animation-delay: 2s;
+}
+
+#slide {
+  color: orange;
+  left: -100px;
+
+}
+
+#slide:hover {
+  color: yellow;
+  transform: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='orange' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}

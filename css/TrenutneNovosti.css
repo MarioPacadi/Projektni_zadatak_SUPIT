@@ -1,0 +1,75 @@
+/* WORLDSKILLS / StudentskiNatjecaj / JuniorLjeto */
+
+body {
+  margin-top: 0;
+}
+
+.campus {
+  position: relative;
+  overflow: hidden;
+}
+
+.campus img {
+  width: 100vw;
+  height: auto;
+  margin: 10px 0 -10vw 0;
+}
+
+.campus div {
+  font-size: 2vw;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px gray;
+}
+
+.centertext {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ScriptText {
+  background-color: whitesmoke;
+  width: 100vw;
+  padding: 20px;
+}
+
+.ScriptText p {
+  font-size: 20px;
+  width: 70vw;
+  margin: auto;
+  padding: 20px;
+}
+
+#FancyBoxVideo div {
+  margin: 10px;
+}
+
+#FancyBoxVideo img {
+  opacity: 0.8;
+}
+
+#FancyBoxVideo img:hover {
+  transform: scale(1.01);
+  opacity: 1;
+}
+
+#FancyBoxVideo video {
+  width: 60vw;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .ScriptText {
+    padding: 10px;
+  }
+
+  .ScriptText p {
+    font-size: 20px;
+    width: 100vw;
+    margin: auto;
+    padding: 10px;
+  }
+}

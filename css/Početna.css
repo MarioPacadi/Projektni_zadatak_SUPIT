@@ -1,0 +1,44 @@
+body {
+  overflow: hidden;
+}
+
+.WindowSizeVideo {
+  width: 100vw;
+  height: 100vh;
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.typing {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 2px 1px black;
+  font-size: 3rem;
+  color: white;
+
+  position: fixed;
+  text-align: left;
+  left: 35%;
+  right: 35%;
+  top: 40%;
+  bottom: 40%;
+  white-space: nowrap;
+}
+
+.zaiskri {
+  text-transform: uppercase;
+  color: rgb(255, 0, 55);
+}
+
+@media screen and (max-width: 768px) {
+  .typing {
+    white-space: normal;
+    text-align: center;
+  }
+}
